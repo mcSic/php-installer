@@ -64,6 +64,7 @@ do
     jpeg) CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --with-jpeg-dir" ;;
     readline) CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --with-readline" ;;
     opcache) CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-opcache" ;;
+    mcrypt) CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --with-mcrypt" ;;
   esac
 done;
 
