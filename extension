@@ -107,7 +107,7 @@ install_extension_xdebug() { # {{{
 } # }}}
 
 install_extension_xhprof() { # {{{
-  install_php_pecl_extension xhprof $XHPROF_CUSTOM_VERSION
+  install_php_source_extension xhprof $XHPROF_CUSTOM_VERSION
 }
 
 show_help() { # {{{
