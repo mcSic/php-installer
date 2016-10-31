@@ -179,6 +179,15 @@ EXTENSIONS["xdebug:type"]=zend_extension
 EXTENSIONS["xdebug:summary"]="Provides functions for function traces and profiling"
 EXTENSIONS["xdebug:version"]="2.4.0"
 EXTENSIONS["xdebug:priority"]=5000
+
+EXTENSIONS["xhprof:url"]="http://pecl.php.net/package/xhprof"
+EXTENSIONS["xhprof:name"]=xhprof
+EXTENSIONS["xhprof:type"]=extension
+EXTENSIONS["xhprof:summary"]="memory usage profiler"
+EXTENSIONS["xhprof:version"]="0.9.4"
+EXTENSIONS["xhprof:source"]=$DIR_SRC/${EXTENSIONS["xhprof:name"]}-${EXTENSIONS["xhprof:version"]}/extension
+EXTENSIONS["xhprof:priority"]=5050
+
 # }}}
 
 function prepare_php_extension() { # {{{
