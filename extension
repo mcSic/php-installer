@@ -65,6 +65,10 @@ install_extension_ssh2() { # {{{
   install_php_pecl_extension ssh2 $SSH2_CUSTOM_VERSION
 } # }}}
 
+install_extension_mongo() { # {{{
+  install_php_pecl_extension mongo
+} # }}}
+
 install_extension_xdebug() { # {{{
   install_php_pecl_extension xdebug $XDEBUG_CUSTOM_VERSION
 
@@ -108,7 +112,7 @@ install_extension_xdebug() { # {{{
 
 install_extension_xhprof() { # {{{
   install_php_source_extension xhprof $XHPROF_CUSTOM_VERSION
-}
+} # }}}
 
 show_help() { # {{{
   if [ -x "$(which display-im6)" ] && [ ${SCRIPT_OPTIONS["imagick"]} == true ]; then
@@ -211,6 +215,9 @@ case "$SCRIPT_SUB_ACTION" in
   xhprof)
     install_extension_xhprof
   ;;
+  mongo)
+    install_extension_mongo
+  ;;
   raphf)
     install_extension_raphf
   ;;
@@ -224,6 +231,6 @@ case "$SCRIPT_SUB_ACTION" in
     show_help
   ;;
   *)
-    echo "Usage: $NAME {list|opcache|pcntl|pthreads|http[raphf|propro]|gearman|memcached|couchbase|cassandra|redis|imagick|xdebug|ssh2|xhprof|help}"
+    echo "Usage: $NAME {list|opcache|pcntl|pthreads|http[raphf|propro]|gearman|memcached|couchbase|cassandra|redis|imagick|xdebug|ssh2|mongo|xhprof|help}"
   ;;
 esac
