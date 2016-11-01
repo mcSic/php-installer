@@ -184,7 +184,7 @@ EXTENSIONS["mongo:url"]="http://pecl.php.net/package/mongo"
 EXTENSIONS["mongo:name"]=mongo
 EXTENSIONS["mongo:type"]=extension
 EXTENSIONS["mongo:summary"]="MongoDB database driver"
-EXTENSIONS["mongo:version"]="1.1.0"
+EXTENSIONS["mongo:version"]="1.1.8"
 EXTENSIONS["mongo:priority"]=5040
 
 EXTENSIONS["xhprof:url"]="http://pecl.php.net/package/xhprof"
