@@ -65,8 +65,8 @@ install_extension_ssh2() { # {{{
   install_php_pecl_extension ssh2 $SSH2_CUSTOM_VERSION
 } # }}}
 
-install_extension_mongo() { # {{{
-  install_php_pecl_extension mongo
+install_extension_mongodb() { # {{{
+  install_php_pecl_extension mongodb
 } # }}}
 
 install_extension_xdebug() { # {{{
@@ -215,8 +215,8 @@ case "$SCRIPT_SUB_ACTION" in
   xhprof)
     install_extension_xhprof
   ;;
-  mongo)
-    install_extension_mongo
+  mongodb)
+    install_extension_mongodb
   ;;
   raphf)
     install_extension_raphf
@@ -231,6 +231,6 @@ case "$SCRIPT_SUB_ACTION" in
     show_help
   ;;
   *)
-    echo "Usage: $NAME {list|opcache|pcntl|pthreads|http[raphf|propro]|gearman|memcached|couchbase|cassandra|redis|imagick|xdebug|ssh2|mongo|xhprof|help}"
+    echo "Usage: $NAME {list|opcache|pcntl|pthreads|http[raphf|propro]|gearman|memcached|couchbase|cassandra|redis|imagick|xdebug|ssh2|mongodb|xhprof|help}"
   ;;
 esac
