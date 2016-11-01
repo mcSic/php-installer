@@ -180,12 +180,12 @@ EXTENSIONS["xdebug:summary"]="Provides functions for function traces and profili
 EXTENSIONS["xdebug:version"]="2.4.0"
 EXTENSIONS["xdebug:priority"]=5000
 
-EXTENSIONS["mongo:url"]="http://pecl.php.net/package/mongo"
-EXTENSIONS["mongo:name"]=mongo
-EXTENSIONS["mongo:type"]=extension
-EXTENSIONS["mongo:summary"]="MongoDB database driver"
-EXTENSIONS["mongo:version"]="1.1.8"
-EXTENSIONS["mongo:priority"]=5040
+EXTENSIONS["mongodb:url"]="http://pecl.php.net/package/mongodb"
+EXTENSIONS["mongodb:name"]=mongodb
+EXTENSIONS["mongodb:type"]=extension
+EXTENSIONS["mongodb:summary"]="MongoDB database driver"
+EXTENSIONS["mongodb:version"]="1.1.8"
+EXTENSIONS["mongodb:priority"]=5040
 
 EXTENSIONS["xhprof:url"]="http://pecl.php.net/package/xhprof"
 EXTENSIONS["xhprof:name"]=xhprof
